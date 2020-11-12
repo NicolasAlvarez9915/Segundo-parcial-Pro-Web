@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "RuhbirpOSewceko5YEp6xfwa/k5M7sb88redJ3+DZXlT+J082OzzilfsERb7UAAozXFvz0gPbREe6Byt40lziw==",
+  "success": true,
+  "projectFilePath": "F:\\Segundo parcial Pro Web\\Datos\\Datos.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\I E Parodi\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\I E Parodi\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
