@@ -46,7 +46,8 @@ namespace Prs.Controllers
                 Id = terceroInput.Id,
                 Nombre = terceroInput.Nombre,
                 Pais = terceroInput.Pais,
-                Telefono = terceroInput.Telefono
+                Telefono = terceroInput.Telefono,
+                TipoId = terceroInput.TipoId
             };
             return tercero;
         }

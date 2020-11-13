@@ -6927,11 +6927,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Segundo parcial Pro Web\\Datos\\Datos.csproj",
+      "projectUniqueName": "F:\\Nueva carpeta\\Datos\\Datos.csproj",
       "projectName": "Datos",
-      "projectPath": "F:\\Segundo parcial Pro Web\\Datos\\Datos.csproj",
+      "projectPath": "F:\\Nueva carpeta\\Datos\\Datos.csproj",
       "packagesPath": "C:\\Users\\I E Parodi\\.nuget\\packages\\",
-      "outputPath": "F:\\Segundo parcial Pro Web\\Datos\\obj\\",
+      "outputPath": "F:\\Nueva carpeta\\Datos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\I E Parodi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6947,8 +6947,8 @@
       "frameworks": {
         "netstandard2.1": {
           "projectReferences": {
-            "F:\\Segundo parcial Pro Web\\Entity\\Entity.csproj": {
-              "projectPath": "F:\\Segundo parcial Pro Web\\Entity\\Entity.csproj"
+            "F:\\Nueva carpeta\\Entity\\Entity.csproj": {
+              "projectPath": "F:\\Nueva carpeta\\Entity\\Entity.csproj"
             }
           }
         }

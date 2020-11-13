@@ -28,6 +28,7 @@ namespace Datos.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "nvarchar(11)", nullable: false),
+                    TipoId = table.Column<string>(type: "nvarchar(11)", nullable: true),
                     Nombre = table.Column<string>(type: "nvarchar(50)", nullable: true),
                     Direccion = table.Column<string>(type: "nvarchar(50)", nullable: true),
                     Telefono = table.Column<string>(type: "nvarchar(11)", nullable: true),

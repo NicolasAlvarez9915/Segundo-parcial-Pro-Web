@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Segundo parcial Pro Web\\Entity\\Entity.csproj": {}
+    "F:\\Nueva carpeta\\Entity\\Entity.csproj": {}
   },
   "projects": {
-    "F:\\Segundo parcial Pro Web\\Entity\\Entity.csproj": {
+    "F:\\Nueva carpeta\\Entity\\Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Segundo parcial Pro Web\\Entity\\Entity.csproj",
+        "projectUniqueName": "F:\\Nueva carpeta\\Entity\\Entity.csproj",
         "projectName": "Entity",
-        "projectPath": "F:\\Segundo parcial Pro Web\\Entity\\Entity.csproj",
+        "projectPath": "F:\\Nueva carpeta\\Entity\\Entity.csproj",
         "packagesPath": "C:\\Users\\I E Parodi\\.nuget\\packages\\",
-        "outputPath": "F:\\Segundo parcial Pro Web\\Entity\\obj\\",
+        "outputPath": "F:\\Nueva carpeta\\Entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\I E Parodi\\AppData\\Roaming\\NuGet\\NuGet.Config",

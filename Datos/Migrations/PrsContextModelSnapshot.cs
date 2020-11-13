@@ -67,6 +67,9 @@ namespace Datos.Migrations
                     b.Property<string>("Telefono")
                         .HasColumnType("nvarchar(11)");
 
+                    b.Property<string>("TipoId")
+                        .HasColumnType("nvarchar(11)");
+
                     b.HasKey("Id");
 
                     b.ToTable("Terceros");

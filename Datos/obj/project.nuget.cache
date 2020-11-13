@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2SCCOEIhaygKvaKsG8unD9dHKLxCEjMHH7p4rG+UsJon0wnB9jzR4LxE2zqAHJ8gkPyIOJyoRPgGYQEglb9qTQ==",
+  "dgSpecHash": "p8Py7kpEqaAYtufORlusBx+vpv43sPqsEfO6HzUH8PppPLuS7IH+AUHegihMwZJ40PZ3duOGSq5YbpQReHIrzw==",
   "success": true,
-  "projectFilePath": "F:\\Segundo parcial Pro Web\\Datos\\Datos.csproj",
+  "projectFilePath": "F:\\Nueva carpeta\\Datos\\Datos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\I E Parodi\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\I E Parodi\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

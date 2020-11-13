@@ -15,6 +15,9 @@ ciudad.
         [Key]
         [Column(TypeName = "nvarchar(11)")]
         public string Id { get; set; }
+
+        [Column(TypeName = "nvarchar(11)")]
+        public string TipoId { get; set; }
         
         [Column(TypeName = "nvarchar(50)")]
         public string Nombre { get; set; }

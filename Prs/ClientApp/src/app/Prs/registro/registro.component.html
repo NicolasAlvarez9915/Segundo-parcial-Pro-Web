@@ -1,88 +1,99 @@
-<p>registro works!</p>
 <blockquote class="blockquote">
     <div class="row">
         <div class="col">
             <label>Identificacion de la persona a buscar</label>
-            <input type="text"  name="identificacionBuscar"  placeholder="Identificacion" [(ngModel)]="identificacionBuscar"/>
+            <input type="text"  name="identificacionBuscar"  placeholder="Identificacion"
+                [(ngModel)]="identificacionBuscar" />
         </div>
         <div class="col">
             <button class="btn btn-info" (click)="buscar()">Buscar</button>
         </div>
     </div>
+    <div class="Ocultar" id="RegistroTercero">
+        <form [formGroup]="formularioRegistroTercero">
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Tipo de documento</label>
+                <select name="SlcSexo" class="form-control" id="inlineFormCustomSelectPref" formControlName="tipoId"
+                    [ngClass]="{'is-invalid':  control.tipoId.touched && control.tipoId.errors}">
+                    <option value="Nit">Nit</option>
+                    <option value="CC">CC</option>
+                </select>
+                <div *ngIf="control.tipoId.errors" class="invalid-feedback">
+                    <div *ngIf="control.tipoId.errors.required">Se require el tipo de documento</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Identificacion</label>
+                <input type="text"  name="identificacion"  placeholder="Identificacion" class="form-control"
+                     formControlName="id" [ngClass]="{'is-invalid':  control.id.touched && control.id.errors}"   />
+                <div *ngIf="control.id.errors" class="invalid-feedback">
+                    <div *ngIf="control.id.errors.required">Se require el documento</div>
+                </div>
+            </div>
+            <div class="">
+                <label>Nombre</label>
+                <input type="text"  name="nombres"  placeholder="Nombres" class="form-control" formControlName="nombre"
+                    [ngClass]="{'is-invalid':  control.nombre.touched && control.nombre.errors}" />
+                <div *ngIf="control.nombre.errors" class="invalid-feedback">
+                    <div *ngIf="control.nombre.errors.required">Se require el nombre</div>
+                </div>
+            </div>
+            <div class="">
+                <label>Direccion</label>
+                <input type="text"  name=""  placeholder="direccion" class="form-control"  formControlName="direccion"
+                    [ngClass]="{'is-invalid':  control.direccion.touched && control.direccion.errors}" />
+                <div *ngIf="control.direccion.errors" class="invalid-feedback">
+                    <div *ngIf="control.direccion.errors.required">Se require la dirreccion </div>
+                </div>
+            </div>
 
+            <div class="">
+                <label>Telfono</label>
+                <input type="text"  name=""  placeholder="Telefono" class="form-control"  formControlName="telefono"
+                    [ngClass]="{'is-invalid':  control.telefono.touched && control.telefono.errors}" />
+                <div *ngIf="control.telefono.errors" class="invalid-feedback">
+                    <div *ngIf="control.telefono.errors.required">Se require el telefono</div>
+                </div>
+            </div>
 
-
-    <!--<form [formGroup]="formularioRegistro">
-        <div class="form-group">
-            <label>Identificacion</label>
-            <input type="text"  name="identificacion"  placeholder="Identificacion" class="form-control"
-                 formControlName="identificacion"   />
-        </div>
-
-        <div class="row">
-            <div class="col">
-                <label>Nombres</label>
-                <input type="text"  name="nombres"  placeholder="Nombres" class="form-control" formControlName="nombres" />
+            <div class="">
 
             </div>
-            
-            <div class="col">
-                <label>Apellidos</label>
-                <input type="text"  name="apellidos"  placeholder="Apellidos" class="form-control"
-                     formControlName="apellidos" />
+
+            <div class="row">
+                <label>Pais</label>
+                <input type="text"  name=""  placeholder="pais" class="form-control"  formControlName="pais"
+                    [ngClass]="{'is-invalid':  control.pais.touched && control.pais.errors}" />
+                <div *ngIf="control.pais.errors" class="invalid-feedback">
+                    <div *ngIf="control.pais.errors.required">Se require el pais</div>
+                </div>
+                <div class="col">
+                    <label>Departamento</label>
+                    <input type="text"  name=""  placeholder="departamento" class="form-control"
+                         formControlName="departamento"
+                        [ngClass]="{'is-invalid':  control.departamento.touched && control.departamento.errors}" />
+                    <div *ngIf="control.departamento.errors" class="invalid-feedback">
+                        <div *ngIf="control.departamento.errors.required">Se require la departamento</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <label>Ciudad</label>
+                    <input type="text"  name=""  placeholder="departamento" class="form-control"
+                         formControlName="ciudad"
+                        [ngClass]="{'is-invalid':  control.ciudad.touched && control.ciudad.errors}" />
+                    <div *ngIf="control.ciudad.errors" class="invalid-feedback">
+                        <div *ngIf="control.ciudad.errors.required">Se require la ciudad</div>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div class="form-group">
-            <label for="exampleFormControlSelect1">Sexo</label>
-            <select name="SlcSexo" class="form-control" id="inlineFormCustomSelectPref" formControlName="sexo">
-                <option value="F">Femenino</option>
-                <option value="M">Masculino</option>
-            </select>
-        </div>
-
-        <div class="form-group">
-            <label>Edad</label>
-            <input type="number"  name="edad"   placeholder="0" class="form-control"  formControlName="edad" />
-        </div>
-
-        <div class="row">
-            <div class="col">
-                <label>Departamento</label>
-                <input type="text"  name="departamento"  placeholder="Departamento" class="form-control"
-                     formControlName="departamento" />
-            </div>
-            <div class="col">
-                <label>Ciudad</label>
-                <input type="text"  name="ciudad"  placeholder="Ciudad" class="form-control"
-                     formControlName="ciudad" />
-            </div>
-        </div>
-        <hr>
-
-        <div class="form-group">
-            <label for="exampleFormControlSelect1">Tipo de apoyo</label>
-            <select name="SlcSexo" class="form-control" id="inlineFormCustomSelectPref" formControlName="tipo">
-                <option value="A">Alimentario</option>
-                <option value="E">Economico</option>
-            </select>
-        </div>
-
-        <div class="form-group">
-            <label>Valor</label>
-            <input type="number"  name="valor"   pla ceholder="0" class="form-control"  formControlName="valor" />
-        </div>
-
-        <div class="form-group">
-            <label>Fecha</label>
-            <input type="text"  name="fecha"  placeholder="Fecha" class="form-control"  formControlName="fecha" />
-        </div>
-    </form>
+            <hr>
+            <button type="button" class="btn btn-info" id="btnRegistrar" (click)="onSubmit()"
+                [disabled]="formularioRegistroTercero.invalid">
+                Registrar
+            </button>
+        </form>
+    </div>
 
 
-    <button type="button" class="btn btn-info" id="btnRegistrar" (click)="onSubmit()"
-        [disabled]="formularioRegistro.invalid">
-        Registrar Persona
-    </button>-->
-
+    
 </blockquote>

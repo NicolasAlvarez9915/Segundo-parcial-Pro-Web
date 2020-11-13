@@ -7,3 +7,12 @@ F:\Segundo parcial Pro Web\Entity\obj\Debug\netstandard2.1\Entity.AssemblyInfo.c
 F:\Segundo parcial Pro Web\Entity\obj\Debug\netstandard2.1\Entity.csproj.CoreCompileInputs.cache
 F:\Segundo parcial Pro Web\Entity\obj\Debug\netstandard2.1\Entity.dll
 F:\Segundo parcial Pro Web\Entity\obj\Debug\netstandard2.1\Entity.pdb
+F:\Nueva carpeta\Entity\bin\Debug\netstandard2.1\Entity.deps.json
+F:\Nueva carpeta\Entity\bin\Debug\netstandard2.1\Entity.dll
+F:\Nueva carpeta\Entity\bin\Debug\netstandard2.1\Entity.pdb
+F:\Nueva carpeta\Entity\obj\Debug\netstandard2.1\Entity.csprojAssemblyReference.cache
+F:\Nueva carpeta\Entity\obj\Debug\netstandard2.1\Entity.AssemblyInfoInputs.cache
+F:\Nueva carpeta\Entity\obj\Debug\netstandard2.1\Entity.AssemblyInfo.cs
+F:\Nueva carpeta\Entity\obj\Debug\netstandard2.1\Entity.csproj.CoreCompileInputs.cache
+F:\Nueva carpeta\Entity\obj\Debug\netstandard2.1\Entity.dll
+F:\Nueva carpeta\Entity\obj\Debug\netstandard2.1\Entity.pdb

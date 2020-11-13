@@ -10,3 +10,15 @@ F:\Segundo parcial Pro Web\Datos\obj\Debug\netstandard2.1\Datos.csproj.CoreCompi
 F:\Segundo parcial Pro Web\Datos\obj\Debug\netstandard2.1\Datos.csproj.CopyComplete
 F:\Segundo parcial Pro Web\Datos\obj\Debug\netstandard2.1\Datos.dll
 F:\Segundo parcial Pro Web\Datos\obj\Debug\netstandard2.1\Datos.pdb
+F:\Nueva carpeta\Datos\bin\Debug\netstandard2.1\Datos.deps.json
+F:\Nueva carpeta\Datos\bin\Debug\netstandard2.1\Datos.dll
+F:\Nueva carpeta\Datos\bin\Debug\netstandard2.1\Datos.pdb
+F:\Nueva carpeta\Datos\bin\Debug\netstandard2.1\Entity.dll
+F:\Nueva carpeta\Datos\bin\Debug\netstandard2.1\Entity.pdb
+F:\Nueva carpeta\Datos\obj\Debug\netstandard2.1\Datos.csprojAssemblyReference.cache
+F:\Nueva carpeta\Datos\obj\Debug\netstandard2.1\Datos.AssemblyInfoInputs.cache
+F:\Nueva carpeta\Datos\obj\Debug\netstandard2.1\Datos.AssemblyInfo.cs
+F:\Nueva carpeta\Datos\obj\Debug\netstandard2.1\Datos.csproj.CoreCompileInputs.cache
+F:\Nueva carpeta\Datos\obj\Debug\netstandard2.1\Datos.csproj.CopyComplete
+F:\Nueva carpeta\Datos\obj\Debug\netstandard2.1\Datos.dll
+F:\Nueva carpeta\Datos\obj\Debug\netstandard2.1\Datos.pdb

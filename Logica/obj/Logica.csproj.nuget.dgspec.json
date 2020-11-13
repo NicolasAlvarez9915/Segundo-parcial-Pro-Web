@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Segundo parcial Pro Web\\Logica\\Logica.csproj": {}
+    "F:\\Nueva carpeta\\Logica\\Logica.csproj": {}
   },
   "projects": {
-    "F:\\Segundo parcial Pro Web\\Datos\\Datos.csproj": {
+    "F:\\Nueva carpeta\\Datos\\Datos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Segundo parcial Pro Web\\Datos\\Datos.csproj",
+        "projectUniqueName": "F:\\Nueva carpeta\\Datos\\Datos.csproj",
         "projectName": "Datos",
-        "projectPath": "F:\\Segundo parcial Pro Web\\Datos\\Datos.csproj",
+        "projectPath": "F:\\Nueva carpeta\\Datos\\Datos.csproj",
         "packagesPath": "C:\\Users\\I E Parodi\\.nuget\\packages\\",
-        "outputPath": "F:\\Segundo parcial Pro Web\\Datos\\obj\\",
+        "outputPath": "F:\\Nueva carpeta\\Datos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\I E Parodi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,8 +27,8 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "F:\\Segundo parcial Pro Web\\Entity\\Entity.csproj": {
-                "projectPath": "F:\\Segundo parcial Pro Web\\Entity\\Entity.csproj"
+              "F:\\Nueva carpeta\\Entity\\Entity.csproj": {
+                "projectPath": "F:\\Nueva carpeta\\Entity\\Entity.csproj"
               }
             }
           }
@@ -80,14 +80,14 @@
         }
       }
     },
-    "F:\\Segundo parcial Pro Web\\Entity\\Entity.csproj": {
+    "F:\\Nueva carpeta\\Entity\\Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Segundo parcial Pro Web\\Entity\\Entity.csproj",
+        "projectUniqueName": "F:\\Nueva carpeta\\Entity\\Entity.csproj",
         "projectName": "Entity",
-        "projectPath": "F:\\Segundo parcial Pro Web\\Entity\\Entity.csproj",
+        "projectPath": "F:\\Nueva carpeta\\Entity\\Entity.csproj",
         "packagesPath": "C:\\Users\\I E Parodi\\.nuget\\packages\\",
-        "outputPath": "F:\\Segundo parcial Pro Web\\Entity\\obj\\",
+        "outputPath": "F:\\Nueva carpeta\\Entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\I E Parodi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -138,14 +138,14 @@
         }
       }
     },
-    "F:\\Segundo parcial Pro Web\\Logica\\Logica.csproj": {
+    "F:\\Nueva carpeta\\Logica\\Logica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Segundo parcial Pro Web\\Logica\\Logica.csproj",
+        "projectUniqueName": "F:\\Nueva carpeta\\Logica\\Logica.csproj",
         "projectName": "Logica",
-        "projectPath": "F:\\Segundo parcial Pro Web\\Logica\\Logica.csproj",
+        "projectPath": "F:\\Nueva carpeta\\Logica\\Logica.csproj",
         "packagesPath": "C:\\Users\\I E Parodi\\.nuget\\packages\\",
-        "outputPath": "F:\\Segundo parcial Pro Web\\Logica\\obj\\",
+        "outputPath": "F:\\Nueva carpeta\\Logica\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\I E Parodi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -161,11 +161,11 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "F:\\Segundo parcial Pro Web\\Datos\\Datos.csproj": {
-                "projectPath": "F:\\Segundo parcial Pro Web\\Datos\\Datos.csproj"
+              "F:\\Nueva carpeta\\Datos\\Datos.csproj": {
+                "projectPath": "F:\\Nueva carpeta\\Datos\\Datos.csproj"
               },
-              "F:\\Segundo parcial Pro Web\\Entity\\Entity.csproj": {
-                "projectPath": "F:\\Segundo parcial Pro Web\\Entity\\Entity.csproj"
+              "F:\\Nueva carpeta\\Entity\\Entity.csproj": {
+                "projectPath": "F:\\Nueva carpeta\\Entity\\Entity.csproj"
               }
             }
           }

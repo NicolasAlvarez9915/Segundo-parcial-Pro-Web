@@ -27,6 +27,7 @@ import { AlertModalComponent } from './@base/alert-modal/alert-modal.component';
   ],
   imports: [
     ReactiveFormsModule,
+    ReactiveFormsModule,
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     FormsModule,

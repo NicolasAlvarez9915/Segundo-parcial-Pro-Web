@@ -6,6 +6,7 @@ namespace Prs.Models
     public class TerceroInputModel
     {
         public string Id { get; set; }
+        public string TipoId { get; set; }
         public string Nombre { get; set; }
         public string Direccion { get; set; }
         public string Telefono { get; set; }
@@ -29,6 +30,7 @@ namespace Prs.Models
             Pais = tercero.Pais;
             Departamento = tercero.Departamento;
             Ciudad = tercero.Ciudad;
+            TipoId = tercero.TipoId;
         }
 
     }

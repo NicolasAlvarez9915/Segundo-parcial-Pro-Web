@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "APGaht6MHpoJOQzU6KdnWosqwxhN/76cEqxnsr27tUCMdhBUA5ZjQoSJzm+qgn3T0YVflkSil00AqLgAcJKYHA==",
+  "dgSpecHash": "Y+v8F6pX19EGOnCNWrksjard+oPaU78Lit7jS96NvoMUlCfHb6bjDuiqetq7iQ3oOtZiilAE5uq6BC9mUtx+Lw==",
   "success": true,
-  "projectFilePath": "F:\\Segundo parcial Pro Web\\Entity\\Entity.csproj",
+  "projectFilePath": "F:\\Nueva carpeta\\Entity\\Entity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\I E Parodi\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512"
   ],
