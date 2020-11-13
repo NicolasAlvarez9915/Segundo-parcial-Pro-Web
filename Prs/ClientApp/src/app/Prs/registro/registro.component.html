@@ -1,0 +1,88 @@
+<p>registro works!</p>
+<blockquote class="blockquote">
+    <div class="row">
+        <div class="col">
+            <label>Identificacion de la persona a buscar</label>
+            <input type="text"  name="identificacionBuscar"  placeholder="Identificacion" [(ngModel)]="identificacionBuscar"/>
+        </div>
+        <div class="col">
+            <button class="btn btn-info" (click)="buscar()">Buscar</button>
+        </div>
+    </div>
+
+
+
+    <!--<form [formGroup]="formularioRegistro">
+        <div class="form-group">
+            <label>Identificacion</label>
+            <input type="text"  name="identificacion"  placeholder="Identificacion" class="form-control"
+                 formControlName="identificacion"   />
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label>Nombres</label>
+                <input type="text"  name="nombres"  placeholder="Nombres" class="form-control" formControlName="nombres" />
+
+            </div>
+            
+            <div class="col">
+                <label>Apellidos</label>
+                <input type="text"  name="apellidos"  placeholder="Apellidos" class="form-control"
+                     formControlName="apellidos" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Sexo</label>
+            <select name="SlcSexo" class="form-control" id="inlineFormCustomSelectPref" formControlName="sexo">
+                <option value="F">Femenino</option>
+                <option value="M">Masculino</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Edad</label>
+            <input type="number"  name="edad"   placeholder="0" class="form-control"  formControlName="edad" />
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label>Departamento</label>
+                <input type="text"  name="departamento"  placeholder="Departamento" class="form-control"
+                     formControlName="departamento" />
+            </div>
+            <div class="col">
+                <label>Ciudad</label>
+                <input type="text"  name="ciudad"  placeholder="Ciudad" class="form-control"
+                     formControlName="ciudad" />
+            </div>
+        </div>
+        <hr>
+
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Tipo de apoyo</label>
+            <select name="SlcSexo" class="form-control" id="inlineFormCustomSelectPref" formControlName="tipo">
+                <option value="A">Alimentario</option>
+                <option value="E">Economico</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Valor</label>
+            <input type="number"  name="valor"   pla ceholder="0" class="form-control"  formControlName="valor" />
+        </div>
+
+        <div class="form-group">
+            <label>Fecha</label>
+            <input type="text"  name="fecha"  placeholder="Fecha" class="form-control"  formControlName="fecha" />
+        </div>
+    </form>
+
+
+    <button type="button" class="btn btn-info" id="btnRegistrar" (click)="onSubmit()"
+        [disabled]="formularioRegistro.invalid">
+        Registrar Persona
+    </button>-->
+
+</blockquote>
