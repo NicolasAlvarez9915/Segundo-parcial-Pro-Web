@@ -11,7 +11,6 @@ namespace Prs.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-
     public class PagoController: ControllerBase
     {
         private readonly PagoService service;
@@ -35,10 +34,14 @@ namespace Prs.Controllers
         }
 
         [HttpGet("{codigo}")]
-        public IEnumerable<PagoViewModel> get(string codigo)
+        public ActionResult<PagoViewModel> get(string codigo)
         {
-            
-            return service.Buscar(codigo).Select(p => new PagoViewModel(p));
+            var response = service.Buscar(codigo);
+            if( response.Error )
+            {
+                return BadRequest(response.Mensaje);
+            }
+            return Ok(response.pago);
         }
         private Pago MapearPago(PagoInputModel pagoInput)
         {

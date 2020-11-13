@@ -2,7 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { AlertModalComponent } from 'src/app/@base/alert-modal/alert-modal.component';
+import { PagoService } from 'src/app/services/pago.service';
 import { TerceroService } from 'src/app/services/tercero.service';
+import { Pago } from '../models/pago';
 import { Tercero } from '../models/tercero';
 
 @Component({
@@ -13,15 +15,19 @@ import { Tercero } from '../models/tercero';
 export class RegistroComponent implements OnInit {
   identificacionBuscar: string;
   formularioRegistroTercero: FormGroup;
+  formularioRegistroPago: FormGroup;
   tercero: Tercero;
+  pago: Pago;
   constructor(
     private terceroService: TerceroService,
     private modalService: NgbModal,
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private pagoService: PagoService
   ) { }
 
   ngOnInit(): void {
     this.buildForm();
+    this.buildFormPago();
   }
 
   private buildForm() {
@@ -47,18 +53,78 @@ export class RegistroComponent implements OnInit {
     });
   }
 
+  private buildFormPago() {
+    this.pago = new Pago();
+    this.pago.codigo = '';
+    this.pago.fecha = new Date();
+    this.pago.idTercero = '';
+    this.pago.iva = 0;
+    this.pago.tipo = '';
+    this.pago.valor = 0;
+
+    this.formularioRegistroPago = this.formBuilder.group({
+      codigo: [this.pago.codigo, Validators.required],
+      fecha: [this.pago.fecha, Validators.required],
+      idTercero: [this.pago.idTercero, Validators.required],
+      iva: [this.pago.iva, Validators.required],
+      tipo: [this.pago.tipo, Validators.required],
+      valor: [this.pago.valor, Validators.required]
+    });
+  }
+
   get control() {
     return this.formularioRegistroTercero.controls;
+  }
+  get controlPago() {
+    return this.formularioRegistroPago.controls;
   }
 
   onSubmit() {
     if (this.formularioRegistroTercero.invalid) {
       return;
     }
-    //this.Registrar();
+    this.registrar();
   }
 
+  onSubmitPago() {
+    if (this.formularioRegistroPago.invalid) {
+      return;
+    }
+    this.registrarPago();
+  }
 
+  registrarPago() {
+    this.pago = this.formularioRegistroPago.value;
+    this.pagoService.Buscar(this.pago.codigo).subscribe(r => {
+      if (r == null) {
+        this.pagoService.registrar(this.pago).subscribe(r => {
+          if (r != null) {
+            const messageBox = this.modalService.open(AlertModalComponent)
+            messageBox.componentInstance.title = "Resultado Operación";
+            messageBox.componentInstance.message = 'Pago  registrado correctamente';
+          }
+        });
+      }else{
+        const messageBox = this.modalService.open(AlertModalComponent)
+            messageBox.componentInstance.title = "Resultado Operación";
+            messageBox.componentInstance.message = 'Ya existe un pago con este codigo';
+      }
+    });
+  }
+  registrar() {
+    this.tercero = this.formularioRegistroTercero.value;
+    this.terceroService.registrar(this.tercero).subscribe(r => {
+      if (r != null) {
+        const messageBox = this.modalService.open(AlertModalComponent)
+        messageBox.componentInstance.title = "Resultado Operación";
+        messageBox.componentInstance.message = 'Persona  registrada correctamente';
+        document.getElementById("RegistroTercero").classList.add("Ocultar");
+        document.getElementById("RegistroTercero").classList.remove("Mostrar");
+        document.getElementById("RegistroPago").classList.add("Mostrar");
+        document.getElementById("RegistroPago").classList.remove("Ocultar");
+      }
+    });
+  }
 
   buscar() {
     this.terceroService.Buscar(this.identificacionBuscar).subscribe(
@@ -66,7 +132,11 @@ export class RegistroComponent implements OnInit {
         if (r != null) {
           const messageBox = this.modalService.open(AlertModalComponent)
           messageBox.componentInstance.title = "Resultado Operación";
-          messageBox.componentInstance.message = 'Persona  registrada';
+          messageBox.componentInstance.message = 'Persona  registrada, debe proceder a registrar los pagos';
+          document.getElementById("RegistroTercero").classList.add("Ocultar");
+          document.getElementById("RegistroTercero").classList.remove("Mostrar");
+          document.getElementById("RegistroPago").classList.add("Mostrar");
+          document.getElementById("RegistroPago").classList.remove("Ocultar");
 
         } else {
           const messageBox = this.modalService.open(AlertModalComponent)
@@ -74,6 +144,8 @@ export class RegistroComponent implements OnInit {
           messageBox.componentInstance.message = 'Persona No registrada, debe proceder a registrarla';
           document.getElementById("RegistroTercero").classList.add("Mostar");
           document.getElementById("RegistroTercero").classList.remove("Ocultar");
+          document.getElementById("RegistroPago").classList.add("Ocultar");
+          document.getElementById("RegistroPago").classList.remove("Mostrar");
         }
       }
     )

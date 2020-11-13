@@ -14,10 +14,13 @@ namespace Logica
         {
             this.context = context;
         }
-        public List<Pago> Buscar(string codigo)
+        public PagoResponse Buscar(string codigo)
         {
-            List<Pago> pagos = context.Pagos.Where(s => s.IdTercero.Equals(codigo)).ToList();
-            return pagos;
+            Pago pago = context.Pagos.Find(codigo);
+            if(pago == null){
+                return new PagoResponse("No existe el pago");
+            }
+            return new PagoResponse(pago);
         }
 
         public PagoResponse Registrar(Pago pago)

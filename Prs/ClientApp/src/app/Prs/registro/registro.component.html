@@ -94,6 +94,69 @@
         </form>
     </div>
 
+    <div class="Ocultar" id="RegistroPago">
+        <form [formGroup]="formularioRegistroPago">
+            <div class="form-group">
+                <label>Codigo</label>
+                <input type="text" class="form-control"
+                     formControlName="codigo" [ngClass]="{'is-invalid':  controlPago.codigo.touched && controlPago.codigo.errors}"   />
+                <div *ngIf="controlPago.codigo.errors" class="invalid-feedback">
+                    <div *ngIf="controlPago.codigo.errors.required">Se require el codigo</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Identificacion</label>
+                <input type="text"  name="identificacion"  placeholder="Identificacion" class="form-control"
+                     formControlName="idTercero" [ngClass]="{'is-invalid':  controlPago.idTercero.touched && controlPago.idTercero.errors}"   />
+                <div *ngIf="controlPago.idTercero.errors" class="invalid-feedback">
+                    <div *ngIf="controlPago.idTercero.errors.required">Se require el documento</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Tipo de pago</label>
+                <select name="SlcSexo" class="form-control"formControlName="tipo"
+                    [ngClass]="{'is-invalid':  controlPago.tipo.touched && controlPago.tipo.errors}">
+                    <option value="Administrativos">Administrativos</option>
+                    <option value="Financieros">Financieros</option>
+                    <option value="Impuestos">Impuestos</option>
+                    <option value="Retenciones">Retenciones</option>
+                </select>
+                <div *ngIf="controlPago.tipo.errors" class="invalid-feedback">
+                    <div *ngIf="controlPago.tipo.errors.required">Se require el tipo de pago</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label >Fecha del pago:</label>
+                <input type="date" class="form-control"
+                 formControlName="fecha" [ngClass]="{'is-invalid':  controlPago.fecha.touched && controlPago.fecha.errors}">
+                <div *ngIf="controlPago.fecha.errors" class="invalid-feedback">
+                    <div *ngIf="controlPago.fecha.errors.required">Se require la fecha del pago</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Valor</label>
+                <input type="number"  name=""  placeholder="" class="form-control" formControlName="valor"
+                    [ngClass]="{'is-invalid':  controlPago.valor.touched && controlPago.valor.errors}" />
+                <div *ngIf="controlPago.valor.errors" class="invalid-feedback">
+                    <div *ngIf="controlPago.valor.errors.required">Se require el valor del pago</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Iva</label>
+                <input type="number"  name="" class="form-control"  formControlName="iva"
+                    [ngClass]="{'is-invalid':  controlPago.iva.touched && controlPago.iva.errors}" />
+                <div *ngIf="controlPago.iva.errors" class="invalid-feedback">
+                    <div *ngIf="controlPago.iva.errors.required">Se require el iva</div>
+                </div>
+            </div>
+            <hr>
+            <button type="button" class="btn btn-info"  (click)="onSubmitPago()"
+                [disabled]="formularioRegistroPago.invalid">
+                Registrar
+            </button>
+        </form>
+    </div>
+
 
     
 </blockquote>
