@@ -1,11 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "R7O4+NYTOSYzDXrToLWUm4I6ePfdDbqkRAtq4Sq0lyk1b8GBOmFpfphcQKgCx/6D9hfXKDHJN4t+py70F3OQJw==",
+  "dgSpecHash": "APGaht6MHpoJOQzU6KdnWosqwxhN/76cEqxnsr27tUCMdhBUA5ZjQoSJzm+qgn3T0YVflkSil00AqLgAcJKYHA==",
   "success": true,
   "projectFilePath": "F:\\Segundo parcial Pro Web\\Entity\\Entity.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\I E Parodi\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\I E Parodi\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\I E Parodi\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }
