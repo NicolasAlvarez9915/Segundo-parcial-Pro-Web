@@ -1,1 +1,48 @@
-<p>consulta works!</p>
+<blockquote class="blockquote">
+    <!--<div class="form-group">
+        <label>Valor total entregado por el grobierno.</label>
+        <input class="form-control" type="text" [(ngModel)]="todos"readonly >
+    </div>-->
+    <label>Pagos realizados.</label>
+    <form>
+        <label for="exampleFormControlSelect1">Filtro tipo de pago</label>
+        <select name="SlcSexo" class="form-control" [(ngModel)]="filtro">
+            <option value="">Todos</option>
+            <option value="Administrativos">Administrativos</option>
+            <option value="Financieros">Financieros</option>
+            <option value="Impuestos">Impuestos</option>
+            <option value="Retenciones">Retenciones</option>
+        </select>
+
+        <button class="btn btn-info" (click)="totalizar()">totalizar</button>
+        <label>.   TOTAL filtrado: {{total}}</label>
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered " *ngIf='pagos && pagos.length'>
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">codigo</th>
+                        <th scope="col">tipo </th>
+                        <th scope="col">fecha </th>
+                        <th scope="col">valor</th>
+                        <th scope="col">iva</th>
+                        <th scope="col">identificacion del tercero</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let pago of pagos|filtroPagos:filtro; index as i ">
+                        <th scope="row">{{ i + 1 }}</th>
+                        <td>{{ pago.codigo }} </td>
+                        <td>{{ pago.tipo }}</td>
+                        <td>{{ pago.fecha }}</td>
+                        <td>{{ pago.valor }}</td>
+                        <td>{{ pago.iva }}</td>
+                        <td>{{ pago.idTercero }}</td>
+
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </form>
+</blockquote>

@@ -14,6 +14,7 @@ import { ConsultaComponent } from './Prs/consulta/consulta.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AlertModalComponent } from './@base/alert-modal/alert-modal.component';
+import { FiltroPagosPipe } from './pipe/filtro-pagos.pipe';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { AlertModalComponent } from './@base/alert-modal/alert-modal.component';
     CounterComponent,
     FetchDataComponent,
     RegistroComponent,
-    ConsultaComponent
+    ConsultaComponent,
+    FiltroPagosPipe
   ],
   imports: [
     ReactiveFormsModule,

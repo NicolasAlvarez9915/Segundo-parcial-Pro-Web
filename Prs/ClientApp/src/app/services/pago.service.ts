@@ -26,12 +26,18 @@ export class PagoService {
   }
 
   registrar(pago: Pago): Observable<Pago> {
-    
-    alert(this.baseUrl+'api/Pago/'+ pago.codigo);
     return this.http.post<Pago>(this.baseUrl + 'api/Pago', pago)
       .pipe(
         tap(_ => this.handleErrorService.log('datos enviados')),
         catchError(this.handleErrorService.handleError<Pago>('Registrar', null))
       );
+  }
+
+  todos(): Observable<Pago[]>{
+    return this.http.get<Pago[]>(this.baseUrl+'api/Pago')
+    .pipe(
+      tap(_ => this.handleErrorService.log('datos enviados')),
+      catchError(this.handleErrorService.handleError<Pago[]>('Todos', null))
+    );
   }
 }

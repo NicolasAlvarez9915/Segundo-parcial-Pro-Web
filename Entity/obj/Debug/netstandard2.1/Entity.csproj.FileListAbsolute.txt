@@ -15,3 +15,4 @@ F:\Nueva carpeta\Entity\obj\Debug\netstandard2.1\Entity.AssemblyInfo.cs
 F:\Nueva carpeta\Entity\obj\Debug\netstandard2.1\Entity.csproj.CoreCompileInputs.cache
 F:\Nueva carpeta\Entity\obj\Debug\netstandard2.1\Entity.dll
 F:\Nueva carpeta\Entity\obj\Debug\netstandard2.1\Entity.pdb
+F:\Nueva carpeta\Entity\obj\Debug\netstandard2.1\Entity.csprojAssemblyReference.cache
